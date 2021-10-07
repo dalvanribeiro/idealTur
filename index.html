@@ -43,13 +43,13 @@
     <header class="masthead">
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold">A sua empresa de turismo</h1>
+                <div class="col-lg-12 align-self-end">
+                    <h1 id="slide3" class="text-white font-weight-bold">A sua empresa de turismo sul capixaba</h1>
                     <hr class="divider" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 mb-5">Texto descrevendo a empresa</p>
-                    <a class="btn btn-primary btn-xl" href="#about">Um pouco mais sobre nós</a>
+                    <p id="slide2" class="text-white-75 mb-5">Texto descrevendo a empresa</p>
+                    <a id="slide1" class="btn btn-primary btn-xl" href="#about">Conheça mais sobre nós</a>
                 </div>
             </div>
         </div>
@@ -201,23 +201,24 @@
                     <p class="text-muted mb-5">Estamos prontos para começar essa experiência com você</p>
                 </div>
             </div>
-            <div class="d-flex justify-content-around">
+            <div class="row justify-content-center">
 
 
-                <div class="text-center">
+                <div class="col-md text-center">
                     <i class="bi-phone fs-1"></i>
                     <div>(28) 9 9914-6355</div>
                 </div>
 
 
-                <a href="https://api.whatsapp.com/send?phone=5528999146355" target="_blank" <div class="text-center">
+                <a href="https://api.whatsapp.com/send?phone=5528999146355" target="_blank" <div
+                    class="col-md text-center">
                     <i class="bi bi-whatsapp fs-1" style="color: #25d366;"></i>
                     <div>(28) 9 9914-6355</div>
 
                 </a>
 
 
-                <a href="https://www.instagram.com/ideal.jm/" target="_blank" <div class="text-center">
+                <a href="https://www.instagram.com/ideal.jm/" target="_blank" <div class="col-md text-center">
                     <i class="bi bi-instagram fs-1" style=" color: #dc2743"></i>
                     <div>@ideal.jm</div>
                 </a>
@@ -225,17 +226,45 @@
         </div>
     </section>
     <!-- Footer-->
-    <footer class="bg-light py-5">
-        <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright &copy; 2021 - Ideal Turismo</div>
-        </div>
-        <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Desenvolvido por <a
-                    href="https://api.whatsapp.com/send?phone=5528999588183&text=Encontrei%20seu%20contado%20no%20site%20da%20Ideal%20turismo.">Dalvan
-                    Ribeiro</a></div>
+    <footer class="bg-light py-4">
+        <div class="container">
+            <div class="row justify-content-around ">
+                <div class="col-sm text-center py-3">
+
+                    <img src="assets\favicon.ico" alt="Imagem logo" class="img-thumbnail border-0"
+                        style="width: 30%; background-color: rgba(255, 255, 255, 0);">
+                    <div class=" text-center text-muted">Ideal turismo</div>
+
+                </div>
+
+                <div class="col-sm text-center text-muted py-3">
+                    <i class="bi bi-geo-alt-fill fs-4" style=" color: #d40020"></i>
+                    Rua Dimas Batista Pereira, 674, Cristal, Jerônimo Monteiro-ES <br>
+                    <i class="small bi bi-check2-circle fs-4 " style=" color: #027e0c"></i> CNPJ: 42.808.736/0001-30
+
+                    <div class="">
+                        <i class=" small bi bi-check2-circle fs-4 " style=" color: #027e0c"></i><a class="text-muted"
+                            href="https://cadastur.turismo.gov.br/cadastur/#!/public/qrcode/42808736000130"> CadasTur:
+                            42.808.736/0001-30</a>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="text-center text-muted py-3">
+                        <div class="text-center text-muted py-3">Copyright &copy; 2021 - Ideal Turismo<br> Todos os
+                            direitos reservados.</div>
+                        <div class="small">Desenvolvido por <a
+                                href="https://api.whatsapp.com/send?phone=5528999588183&text=Encontrei%20seu%20contado%20no%20site%20da%20Ideal%20turismo.">Dalvan
+                                Ribeiro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-   
+    <!-- Jquery core JS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
