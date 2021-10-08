@@ -9,6 +9,30 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+    //fadeIn da homepage
+    var fadeIn = function (duration) {
+        
+        $("#slide3").hide();
+        $("#slide2").hide();
+        $("#slide1").hide();
+
+        $("#slide3").fadeIn(duration,
+            function () {
+                $("#slide2").fadeIn(duration,
+                    function () {
+                        $("#slide1").fadeIn(duration,
+                            function () {
+
+                            }
+                        )
+
+                    }
+                )
+            }
+        );
+    };
+    fadeIn(1000);
+
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -58,21 +82,4 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-$("#slide3").hide();
-$("#slide2").hide();
-$("#slide1").hide();
 
-$("#slide3").fadeIn(1000,
-    function () {
-        $("#slide2").fadeIn(1000,
-            function () {
-                $("#slide1").fadeIn(1000,
-                    function () {
-        
-                    }
-                )
-
-            }
-        )
-    }
-);
