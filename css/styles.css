@@ -11448,10 +11448,3 @@ header.masthead h1, header.masthead .h1 {
 .portfolio{
   background-color: rgb(173, 173, 173);
 }
-
-.verticalDivider{
-  border-right: 3px solid #f4623a;
-  width: 2px;
-  height: 70px;
- 
-}
